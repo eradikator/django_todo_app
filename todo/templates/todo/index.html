@@ -19,6 +19,8 @@
 			
 			<div class="row">
 				<div class="col-lg-4 col-lg-offset-4" id="content">
+					<span class="hello-msg">Hello, {{request.user}} </span>
+    				<span><a class="hello-msg" href="{% url 'logout' %}">Logout</a></span>
 					<h2>WHAT DO YOU WANT TO DO TODAY?</h2>
 					
 					<form action="{% url 'add' %}" method="POST" role="form">
